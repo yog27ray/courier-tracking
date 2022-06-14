@@ -6,8 +6,7 @@
   "types": "typings/index.d.ts",
   "scripts": {
     "tunnel": "ssh -R 80:localhost:9000 serveo.net",
-    "coverage": "npm run coverage:mongodb",
-    "coverage:mongodb": "DEBUG=no TEST_DB=mongoDB nyc mocha src/setup.ts '**/*.spec.ts' && nyc report --reporter=text-lcov > coverage1.lcov",
+    "coverage": "nyc mocha src/setup.ts '**/*.spec.ts' && nyc report --reporter=text-lcov > coverage1.lcov",
     "test": "mocha --require ts-node/register/transpile-only src/setup.ts '**/*.spec.ts'"
   },
   "repository": {
@@ -37,7 +36,6 @@
     "eslint-plugin-typescript": "0.14.0",
     "express": "^4.18.1",
     "mocha": "^10.0.0",
-    "mongodb-memory-server": "8.6.0",
     "morgan": "1.10.0",
     "node-fetch": "2.6.7",
     "node-tslint-rules": "1.20.3",

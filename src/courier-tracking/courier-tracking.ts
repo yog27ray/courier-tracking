@@ -1,6 +1,6 @@
-import { ClickPost } from './couriers/click-post/click-post';
-import { TrackingUpdate } from '../../typings/tracking-update';
 import { CourierTrackingConfig } from '../../typings/config';
+import { TrackingUpdate } from '../../typings/tracking-update';
+import { ClickPost } from './couriers/click-post/click-post';
 import { Delhivery } from './couriers/delhivery/delhivery';
 
 let clickPost: ClickPost;

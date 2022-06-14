@@ -1,6 +1,6 @@
-import { ValueOf } from './common';
 import { Courier } from '../src/courier-tracking/constant/courier';
 import { Stage } from '../src/courier-tracking/constant/stage';
+import { ValueOf } from './common';
 
 export declare interface TrackingUpdate {
   serviceProvider: ValueOf<typeof Courier>;

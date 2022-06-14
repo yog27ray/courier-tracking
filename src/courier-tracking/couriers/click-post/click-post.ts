@@ -1,9 +1,9 @@
-import { CourierTracking } from '../courier-tracking';
 import { TrackingUpdate } from '../../../../typings/tracking-update';
-import { StageMap } from './stage-map';
-import { CourierMap } from './courier-map';
 import { Courier } from '../../constant/courier';
 import { StageGroupMap } from '../../constant/stage-group-map';
+import { CourierTracking } from '../courier-tracking';
+import { CourierMap } from './courier-map';
+import { StageMap } from './stage-map';
 
 export class ClickPost extends CourierTracking {
   transformBodyToTrackingUpdate(body: Record<string, unknown>): TrackingUpdate {
