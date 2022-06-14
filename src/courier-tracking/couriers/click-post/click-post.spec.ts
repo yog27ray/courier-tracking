@@ -1,8 +1,8 @@
-import fetch from 'node-fetch';
 import { expect } from 'chai';
-import { Env } from '../../../test-env';
-import { TestConfig } from '../../../setup';
+import fetch from 'node-fetch';
 import sinon, { SinonSpy } from 'sinon';
+import { TestConfig } from '../../../setup';
+import { Env } from '../../../test-env';
 
 describe('ClickPost', () => {
   context('webhook handler at different updates', () => {
@@ -29,12 +29,10 @@ describe('ClickPost', () => {
               timestamp: '2022-06-14T15:03:00Z',
               location: 'CITY-HUB',
               clickpost_city: 'City',
-              clickpost_status_code: 2
+              clickpost_status_code: 2,
             },
             is_rvp: false,
             account_code: 'ecomexpress',
-            npr_status_code: null,
-            npr_status_description: null,
           },
           status: '1340',
           clickpost_city: 'City',
@@ -58,7 +56,7 @@ describe('ClickPost', () => {
         serviceProvider: 'ClickPost',
         stageGroup: 'OrderPlaced',
         stage: 'PickupPending',
-        expectedDateOfDelivery: undefined
+        expectedDateOfDelivery: undefined,
       });
     });
 
@@ -128,7 +126,7 @@ describe('ClickPost', () => {
               timestamp: '2022-06-14T15:03:00Z',
               location: 'CITY-HUB',
               clickpost_city: 'City',
-              clickpost_status_code: 5
+              clickpost_status_code: 5,
             },
             is_rvp: false,
             account_code: 'ecomexpress',
@@ -177,7 +175,7 @@ describe('ClickPost', () => {
               timestamp: '2022-06-14T15:03:00Z',
               location: 'CITY-HUB',
               clickpost_city: 'City',
-              clickpost_status_code: 6
+              clickpost_status_code: 6,
             },
             is_rvp: false,
             account_code: 'delhivery',
@@ -226,7 +224,7 @@ describe('ClickPost', () => {
               timestamp: '2022-06-14T15:03:00Z',
               location: 'CITY-HUB',
               clickpost_city: 'City',
-              clickpost_status_code: 8
+              clickpost_status_code: 8,
             },
             is_rvp: false,
             account_code: 'delhivery',
@@ -275,7 +273,7 @@ describe('ClickPost', () => {
               timestamp: '2022-06-14T15:03:00Z',
               location: 'CITY-HUB',
               clickpost_city: 'City',
-              clickpost_status_code: 9
+              clickpost_status_code: 9,
             },
             is_rvp: false,
             account_code: 'delhivery',
@@ -324,7 +322,7 @@ describe('ClickPost', () => {
               timestamp: '2022-06-14T15:03:00Z',
               location: 'CITY-HUB',
               clickpost_city: 'City',
-              clickpost_status_code: 11
+              clickpost_status_code: 11,
             },
             is_rvp: false,
             account_code: 'ecomexpress',
@@ -373,7 +371,7 @@ describe('ClickPost', () => {
               timestamp: '2022-06-14T15:03:00Z',
               location: 'CITY-HUB',
               clickpost_city: 'City',
-              clickpost_status_code: 12
+              clickpost_status_code: 12,
             },
             is_rvp: false,
             account_code: 'ecomexpress',
@@ -422,7 +420,7 @@ describe('ClickPost', () => {
               timestamp: '2022-06-14T15:03:00Z',
               location: 'CITY-HUB',
               clickpost_city: 'City',
-              clickpost_status_code: 13
+              clickpost_status_code: 13,
             },
             is_rvp: false,
             account_code: 'delhivery',
@@ -519,7 +517,7 @@ describe('ClickPost', () => {
               timestamp: '2022-06-14T15:03:00Z',
               location: 'CITY-HUB',
               clickpost_city: 'City',
-              clickpost_status_code: 18
+              clickpost_status_code: 18,
             },
             is_rvp: false,
             account_code: 'ecomexpress',
@@ -546,7 +544,7 @@ describe('ClickPost', () => {
         serviceProvider: 'ClickPost',
         stageGroup: 'InTransit',
         stage: 'ShipmentDelayed',
-        expectedDateOfDelivery: undefined
+        expectedDateOfDelivery: undefined,
       });
     });
 

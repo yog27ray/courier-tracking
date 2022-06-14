@@ -1,8 +1,8 @@
-import fetch from 'node-fetch';
 import { expect } from 'chai';
-import { Env } from '../../../test-env';
-import { TestConfig } from '../../../setup';
+import fetch from 'node-fetch';
 import sinon, { SinonSpy } from 'sinon';
+import { TestConfig } from '../../../setup';
+import { Env } from '../../../test-env';
 
 describe('Delhivery', () => {
   context('webhook handler at different updates', () => {
@@ -28,8 +28,8 @@ describe('Delhivery', () => {
               StatusType: 'UD',
               StatusLocation: 'Gurgaon_Tauru_GW (Haryana)',
               Instructions: 'Bag Received at Facility',
-            }
-          }
+            },
+          },
         }),
       });
       expect(response.status).to.equal(200);
@@ -63,8 +63,8 @@ describe('Delhivery', () => {
               StatusType: 'UD',
               StatusLocation: 'Gurgaon_Tauru_GW (Haryana)',
               Instructions: 'Delayed due to weather conditions',
-            }
-          }
+            },
+          },
         }),
       });
       expect(response.status).to.equal(200);
@@ -98,8 +98,8 @@ describe('Delhivery', () => {
               StatusType: 'UD',
               StatusLocation: 'Gurgaon_Tauru_GW (Haryana)',
               Instructions: 'Call placed to consignee',
-            }
-          }
+            },
+          },
         }),
       });
       expect(response.status).to.equal(200);
@@ -133,8 +133,8 @@ describe('Delhivery', () => {
               StatusType: 'UD',
               StatusLocation: 'Gurgaon_Tauru_GW (Haryana)',
               Instructions: 'Pickup scheduled',
-            }
-          }
+            },
+          },
         }),
       });
       expect(response.status).to.equal(200);
@@ -168,8 +168,8 @@ describe('Delhivery', () => {
               StatusType: 'UD',
               StatusLocation: 'Gurgaon_Tauru_GW (Haryana)',
               Instructions: 'Package not picked/received from client',
-            }
-          }
+            },
+          },
         }),
       });
       expect(response.status).to.equal(200);
@@ -203,8 +203,8 @@ describe('Delhivery', () => {
               StatusType: 'RT',
               StatusLocation: 'Gurgaon_Tauru_GW (Haryana)',
               Instructions: 'Added to Bag',
-            }
-          }
+            },
+          },
         }),
       });
       expect(response.status).to.equal(200);
@@ -238,8 +238,8 @@ describe('Delhivery', () => {
               StatusType: 'RT',
               StatusLocation: 'Gurgaon_Tauru_GW (Haryana)',
               Instructions: 'Dispatched for RTO',
-            }
-          }
+            },
+          },
         }),
       });
       expect(response.status).to.equal(200);
@@ -273,8 +273,8 @@ describe('Delhivery', () => {
               StatusType: 'RT',
               StatusLocation: 'Gurgaon_Tauru_GW (Haryana)',
               Instructions: 'Shipment Received at Facility',
-            }
-          }
+            },
+          },
         }),
       });
       expect(response.status).to.equal(200);
@@ -308,8 +308,8 @@ describe('Delhivery', () => {
               StatusType: 'RT',
               StatusLocation: 'Gurgaon_Tauru_GW (Haryana)',
               Instructions: 'RTO Delivered',
-            }
-          }
+            },
+          },
         }),
       });
       expect(response.status).to.equal(200);
@@ -323,7 +323,7 @@ describe('Delhivery', () => {
         serviceProvider: 'Delhivery',
         stage: 'RTODelivered',
         stageGroup: 'Returned',
-        expectedDateOfDelivery: undefined
+        expectedDateOfDelivery: undefined,
       });
     });
 

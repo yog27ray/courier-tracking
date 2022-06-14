@@ -1,8 +1,8 @@
-import { CourierTracking } from '../courier-tracking';
 import { TrackingUpdate } from '../../../../typings/tracking-update';
-import { StageMap } from './stage-map';
 import { Courier } from '../../constant/courier';
 import { StageGroupMap } from '../../constant/stage-group-map';
+import { CourierTracking } from '../courier-tracking';
+import { StageMap } from './stage-map';
 
 export class Delhivery extends CourierTracking {
   transformBodyToTrackingUpdate(body: Record<string, unknown>): TrackingUpdate {
@@ -11,7 +11,7 @@ export class Delhivery extends CourierTracking {
       ReferenceNo: string;
       Status: { Instructions: string; Status: string; StatusType: string; };
     };
-    const stage = `${StatusType}_${Status}`.replace(new RegExp(' ', 'g'), '');
+    const stage = `${StatusType}_${Status}`.replace(/ /g, '');
     return {
       awb: AWB,
       courier: Courier.Delhivery,
