@@ -1,3 +1,3 @@
-import { CourierTracking, CourierTrackingExpress } from './src/courier-tracking';
+import { CourierTracking, CourierTrackingExpress, Stage, Courier } from './src/courier-tracking';
 
-export { CourierTrackingExpress, CourierTracking };
+export { CourierTrackingExpress, CourierTracking, Stage, Courier };

@@ -1,11 +1,15 @@
-export class Courier {
-  static ClickPost: 'ClickPost' = 'ClickPost';
+const Courier: {
+  ClickPost: 'ClickPost';
+  EcomExpress: 'EcomExpress';
+  BlueDart: 'BlueDart';
+  Delhivery: 'Delhivery';
+  Ekart: 'Ekart';
+} = {
+  ClickPost: 'ClickPost',
+  EcomExpress: 'EcomExpress',
+  BlueDart: 'BlueDart',
+  Delhivery: 'Delhivery',
+  Ekart: 'Ekart',
+};
 
-  static EcomExpress: 'EcomExpress' = 'EcomExpress';
-
-  static BlueDart: 'BlueDart' = 'BlueDart';
-
-  static Delhivery: 'Delhivery' = 'Delhivery';
-
-  static Ekart: 'Ekart' = 'Ekart';
-}
+export { Courier };
