@@ -5,6 +5,7 @@ const CourierMap: { [key: number]: ValueOf<typeof Courier> } = {
   3: Courier.EcomExpress,
   4: Courier.Delhivery,
   5: Courier.BlueDart,
+  30: Courier.Pickrr,
   55: Courier.Ekart,
 };
 

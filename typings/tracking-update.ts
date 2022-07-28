@@ -1,5 +1,5 @@
-import { Courier } from '../src/courier-tracking/constant/courier';
-import { Stage } from '../src/courier-tracking/constant/stage';
+import { Courier, Stage } from '../src/courier-tracking';
+import { Group } from '../src/courier-tracking/constant/group';
 import { ValueOf } from './common';
 
 export declare interface TrackingUpdate {
@@ -9,6 +9,6 @@ export declare interface TrackingUpdate {
   orderId: string;
   stage: ValueOf<typeof Stage>;
   note: string;
-  stageGroup: string;
+  stageGroup: ValueOf<typeof Group>;
   expectedDateOfDelivery: string;
 }
