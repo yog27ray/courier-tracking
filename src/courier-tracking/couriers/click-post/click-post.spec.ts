@@ -597,6 +597,124 @@ describe('ClickPost', () => {
       });
     });
 
+    it('should process the event of clickPost for track-order api', async () => {
+      const response = await fetch(`${Env.URL}/api/clickpost/webhook`, {
+        method: 'POST',
+        body: JSON.stringify({
+          latest_status: {
+            timestamp: '2022-09-28 15:16:14',
+            location: '',
+            remark: 'Delivered/RTO/Return',
+            status: 'Delivered/RTO/Return',
+            clickpost_status_code: 8,
+            clickpost_status_description: 'Delivered',
+            clickpost_status_bucket: 6,
+            clickpost_status_bucket_description: 'Delivered',
+            created_at: '2022-09-28 02:36:38',
+          },
+          scans: [
+            {
+              timestamp: '2022-09-28 15:16:14',
+              location: '',
+              remark: 'Delivered/RTO/Return',
+              status: 'Delivered/RTO/Return',
+              clickpost_status_code: 8,
+              checkpoint_id: 8535731117,
+              tracking_id: 456126943,
+              created_at: '2022-09-28 11:20:47',
+              clickpost_status_description: 'Delivered',
+              clickpost_status_bucket: 6,
+              clickpost_status_bucket_description: 'Delivered',
+            },
+            {
+              timestamp: '2022-09-28 13:45:42',
+              location: '',
+              remark: 'Last Mile',
+              status: 'Last Mile',
+              clickpost_status_code: 6,
+              checkpoint_id: 8532187349,
+              tracking_id: 456126943,
+              created_at: '2022-09-28 09:23:57',
+              clickpost_status_description: 'OutForDelivery',
+              clickpost_status_bucket: 4,
+              clickpost_status_bucket_description: 'Out for delivery',
+            },
+            {
+              timestamp: '2022-09-28 12:44:18',
+              location: '',
+              remark: 'Last Mile',
+              status: 'Last Mile',
+              clickpost_status_code: 5,
+              checkpoint_id: 8529506365,
+              tracking_id: 456126943,
+              created_at: '2022-09-28 07:25:01',
+              clickpost_status_description: 'InTransit',
+              clickpost_status_bucket: 3,
+              clickpost_status_bucket_description: 'In transit',
+            },
+            {
+              timestamp: '2022-09-28 12:31:54',
+              location: '',
+              remark: 'In-Transit',
+              status: 'In-Transit',
+              clickpost_status_code: 4,
+              checkpoint_id: 8529506367,
+              tracking_id: 456126943,
+              created_at: '2022-09-28 07:25:01',
+              clickpost_status_description: 'PickedUp',
+              clickpost_status_bucket: 2,
+              clickpost_status_bucket_description: 'Shipped',
+            },
+            {
+              timestamp: '2022-09-28 08:06:35',
+              location: '',
+              remark: 'Fulfilment',
+              status: 'Fulfilment',
+              clickpost_status_code: 28,
+              checkpoint_id: 8527265789,
+              tracking_id: 456126943,
+              created_at: '2022-09-28 05:28:37',
+              clickpost_status_description: 'Awb Registered',
+              clickpost_status_bucket: 1,
+              clickpost_status_bucket_description: 'Order placed',
+            },
+          ],
+          valid: true,
+          additional: {
+            is_stuck: false,
+            order_id: 'orderId',
+            sku: ['wYvUWChFfn', 'SZ0YmCVie3'],
+            edd: { max_sla: 5, min_sla: 2, exact_sla: undefined },
+            invoice_number: 'invoiceNumber',
+            pickup_city: 'Bengaluru',
+            drop_city: 'Bangalore',
+            cod_value: 857,
+            currency_code: 'INR',
+            courier_partner_edd: '2022-06-16',
+            channel_name: 'App',
+            qc_images: [],
+            dest_hub_inscan: false,
+            rto_intransit_timestamp: undefined,
+            courier_partner_id: 207,
+            courier_partner_name: 'Grow Simplee',
+          },
+        }),
+      });
+      expect(response.status).to.equal(200);
+      expect(callbackSpy.calledOnce).to.be.true;
+      expect(callbackSpy.args[0].length).to.equal(2);
+      expect(callbackSpy.args[0][0]).to.deep.equal({
+        awb: undefined,
+        courier: 'GrowSimplee',
+        note: 'Delivered/RTO/Return',
+        orderId: 'orderId',
+        serviceProvider: 'ClickPost',
+        stageGroup: 'Delivered',
+        stage: 'Delivered',
+        expectedDateOfDelivery: '2022-06-16',
+      });
+    });
+
     afterEach(() => callbackSpy.restore());
   });
 });

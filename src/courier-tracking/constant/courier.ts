@@ -5,6 +5,7 @@ const Courier: {
   Pickrr: 'Pickrr';
   Delhivery: 'Delhivery';
   Ekart: 'Ekart';
+  GrowSimplee: 'GrowSimplee';
 } = {
   ClickPost: 'ClickPost',
   EcomExpress: 'EcomExpress',
@@ -12,6 +13,7 @@ const Courier: {
   BlueDart: 'BlueDart',
   Delhivery: 'Delhivery',
   Ekart: 'Ekart',
+  GrowSimplee: 'GrowSimplee',
 };
 
 export { Courier };
