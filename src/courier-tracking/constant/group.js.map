@@ -1,0 +1,1 @@
+{"version":3,"file":"group.js","sourceRoot":"","sources":["../../../../src/courier-tracking/constant/group.ts"],"names":[],"mappings":";;;AAAA,MAAM,KAAK,GAUP;IACF,WAAW,EAAE,aAAa;IAC1B,UAAU,EAAE,YAAY;IACxB,SAAS,EAAE,WAAW;IACtB,cAAc,EAAE,gBAAgB;IAChC,cAAc,EAAE,gBAAgB;IAChC,SAAS,EAAE,WAAW;IACtB,IAAI,EAAE,MAAM;IACZ,OAAO,EAAE,SAAS;IAClB,QAAQ,EAAE,UAAU;CACrB,CAAC;AAEO,sBAAK"}
