@@ -8,6 +8,8 @@ const CourierMap = {
     5: courier_1.Courier.BlueDart,
     30: courier_1.Courier.Pickrr,
     55: courier_1.Courier.Ekart,
+    212: courier_1.Courier.AmazonTransportService,
+    250: courier_1.Courier.Smartr,
     207: courier_1.Courier.GrowSimplee,
 };
 exports.CourierMap = CourierMap;

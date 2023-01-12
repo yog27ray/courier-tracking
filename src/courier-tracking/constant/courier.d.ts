@@ -6,5 +6,7 @@ declare const Courier: {
     Delhivery: 'Delhivery';
     Ekart: 'Ekart';
     GrowSimplee: 'GrowSimplee';
+    AmazonTransportService: 'AmazonTransportService';
+    Smartr: 'Smartr';
 };
 export { Courier };

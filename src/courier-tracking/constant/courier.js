@@ -9,6 +9,8 @@ const Courier = {
     Delhivery: 'Delhivery',
     Ekart: 'Ekart',
     GrowSimplee: 'GrowSimplee',
+    AmazonTransportService: 'AmazonTransportService',
+    Smartr: 'Smartr',
 };
 exports.Courier = Courier;
 //# sourceMappingURL=courier.js.map
