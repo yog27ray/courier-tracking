@@ -14,7 +14,7 @@
     "url": "git+https://github.com/yog27ray/courier-tracking.git"
   },
   "dependencies": {
-    "logger4node": "^0.1.0"
+    "logger4node": "^1.0.0"
   },
   "devDependencies": {
     "@types/chai": "4.3.4",
