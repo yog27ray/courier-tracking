@@ -1,6 +1,6 @@
 {
   "name": "courier-tracking",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Track shipment update from various couriers.",
   "main": "index.js",
   "types": "typings/index.d.ts",
