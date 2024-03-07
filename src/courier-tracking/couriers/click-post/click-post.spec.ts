@@ -50,7 +50,7 @@ describe('ClickPost', () => {
       expect(callbackSpy.args[0].length).to.equal(2);
       expect(callbackSpy.args[0][0]).to.deep.equal({
         awb: '1111111111',
-        courier: 'EcomExpress',
+        courier: 'Ecom Express',
         note: 'Pickup Failed, Shipment Not Handed Over',
         orderId: 'orderId',
         serviceProvider: 'ClickPost',
@@ -98,7 +98,7 @@ describe('ClickPost', () => {
       expect(callbackSpy.args[0].length).to.equal(2);
       expect(callbackSpy.args[0][0]).to.deep.equal({
         awb: '1111111111',
-        courier: 'EcomExpress',
+        courier: 'Ecom Express',
         note: 'Shipment Picked Up',
         orderId: 'orderId',
         serviceProvider: 'ClickPost',
@@ -147,7 +147,7 @@ describe('ClickPost', () => {
       expect(callbackSpy.args[0].length).to.equal(2);
       expect(callbackSpy.args[0][0]).to.deep.equal({
         awb: '1111111111',
-        courier: 'EcomExpress',
+        courier: 'Ecom Express',
         note: 'Bag scanned at Hub',
         orderId: 'orderId',
         serviceProvider: 'ClickPost',
@@ -343,7 +343,7 @@ describe('ClickPost', () => {
       expect(callbackSpy.args[0].length).to.equal(2);
       expect(callbackSpy.args[0][0]).to.deep.equal({
         awb: '1111111111',
-        courier: 'EcomExpress',
+        courier: 'Ecom Express',
         note: 'Shipment RTO Lock',
         orderId: 'orderId',
         serviceProvider: 'ClickPost',
@@ -392,7 +392,7 @@ describe('ClickPost', () => {
       expect(callbackSpy.args[0].length).to.equal(2);
       expect(callbackSpy.args[0][0]).to.deep.equal({
         awb: '1111111111',
-        courier: 'EcomExpress',
+        courier: 'Ecom Express',
         note: '777 - RTS - Return To Shipper',
         orderId: 'orderId',
         serviceProvider: 'ClickPost',
@@ -490,7 +490,7 @@ describe('ClickPost', () => {
       expect(callbackSpy.args[0].length).to.equal(2);
       expect(callbackSpy.args[0][0]).to.deep.equal({
         awb: '1111111111',
-        courier: 'EcomExpress',
+        courier: 'Ecom Express',
         note: '999 - Delivered',
         orderId: 'orderId',
         serviceProvider: 'ClickPost',
@@ -587,7 +587,7 @@ describe('ClickPost', () => {
       expect(callbackSpy.args[0].length).to.equal(2);
       expect(callbackSpy.args[0][0]).to.deep.equal({
         awb: '1111111111',
-        courier: 'EcomExpress',
+        courier: 'Ecom Express',
         note: '321 - Contact Customer Service',
         orderId: 'orderId',
         serviceProvider: 'ClickPost',
