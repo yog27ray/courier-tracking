@@ -705,7 +705,7 @@ describe('ClickPost', () => {
       expect(callbackSpy.args[0].length).to.equal(2);
       expect(callbackSpy.args[0][0]).to.deep.equal({
         awb: undefined,
-        courier: 'GrowSimplee',
+        courier: 'Grow Simplee',
         note: 'Delivered/RTO/Return',
         orderId: 'orderId',
         serviceProvider: 'ClickPost',
