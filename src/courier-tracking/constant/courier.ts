@@ -1,23 +1,27 @@
-const Courier: {
-  ClickPost: 'ClickPost';
-  EcomExpress: 'EcomExpress';
-  BlueDart: 'BlueDart';
-  Pickrr: 'Pickrr';
-  Delhivery: 'Delhivery';
-  Ekart: 'Ekart';
-  GrowSimplee: 'GrowSimplee';
-  AmazonTransportService: 'AmazonTransportService';
-  Smartr: 'Smartr';
-} = {
+const Courier = {
   ClickPost: 'ClickPost',
-  EcomExpress: 'EcomExpress',
+  EcomExpress: 'Ecom Express',
   Pickrr: 'Pickrr',
   BlueDart: 'BlueDart',
   Delhivery: 'Delhivery',
-  Ekart: 'Ekart',
-  GrowSimplee: 'GrowSimplee',
+  Ekart: 'EKART',
+  GrowSimplee: 'Grow Simplee',
   AmazonTransportService: 'AmazonTransportService',
   Smartr: 'Smartr',
-};
+  Fedex: 'Fedex',
+  Aramex: 'Aramex',
+  XpressBees: 'XpressBees',
+  Amazon: 'AMAZON',
+  IndiaPost: 'India Post',
+  DotZot: 'DotZot',
+  NONE: 'None',
+  Shipway: 'Shipway',
+  Dunzo: 'Dunzo',
+  ShadowFax: 'ShadowFax',
+  ZFW: 'ZFW',
+  DTDC: 'DTDC',
+  ShipRocket: 'ShipRocket',
+  PharmEasy: 'pharmeasy',
+} as const;
 
 export { Courier };
