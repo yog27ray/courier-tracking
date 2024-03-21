@@ -24,6 +24,7 @@ const StageMap: { [key: number]: ValueOf<typeof Stage> } = {
   20: Stage.ShipmentHeld,
   21: Stage.RTOInTransit,
   25: Stage.OutForPickup,
+  26: Stage.RTO,
   27: Stage.RTOShipmentDelayed,
   28: Stage.AWBGenerated,
   30: Stage.ExchangePickUp,
