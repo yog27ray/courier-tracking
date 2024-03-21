@@ -31,6 +31,7 @@ const StageMap = {
     31: stage_1.Stage.ExchangeInTransit,
     32: stage_1.Stage.ExchangeDelivered,
     101: stage_1.Stage.ReturnOrderPlaced,
+    1004: stage_1.Stage.InTransit,
 };
 exports.StageMap = StageMap;
 //# sourceMappingURL=stage-map.js.map
