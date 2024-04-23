@@ -32,6 +32,7 @@ const StageMap: { [key: number]: ValueOf<typeof Stage> } = {
   32: Stage.ExchangeDelivered,
   101: Stage.ReturnOrderPlaced,
   1004: Stage.InTransit,
+  1005: Stage.InTransit,
   1006: Stage.InTransit,
 };
 
