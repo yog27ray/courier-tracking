@@ -19,6 +19,7 @@ const CourierMap: { [key: number]: ValueOf<typeof Courier> } = {
   212: Courier.AmazonTransportService,
   250: Courier.Smartr,
   207: Courier.GrowSimplee,
+  391: Courier.PicoXpress,
   1001: Courier.IndiaPost,
 };
 

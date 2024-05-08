@@ -6,6 +6,7 @@ const Courier = {
   Delhivery: 'Delhivery',
   Ekart: 'EKART',
   GrowSimplee: 'Grow Simplee',
+  PicoXpress: 'Pico Xpress',
   AmazonTransportService: 'AmazonTransportService',
   Smartr: 'Smartr',
   Fedex: 'Fedex',
