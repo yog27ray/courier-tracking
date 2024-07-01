@@ -22,7 +22,7 @@
     "@types/mocha": "10.0.6",
     "@types/sinon": "17.0.3",
     "@typescript-eslint/eslint-plugin": "7.8.0",
-    "@typescript-eslint/parser": "7.8.0",
+    "@typescript-eslint/parser": "7.14.1",
     "body-parser": "1.20.2",
     "chai": "4.3.6",
     "chai-subset": "1.6.0",
