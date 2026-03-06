@@ -3,12 +3,12 @@ import { Group } from '../src/courier-tracking/constant/group';
 import { ValueOf } from './common';
 
 export declare interface TrackingUpdate {
-  serviceProvider: ValueOf<typeof Courier>;
-  courier: ValueOf<typeof Courier>;
   awb: string;
-  orderId: string;
-  stage: ValueOf<typeof Stage>;
-  note: string;
-  stageGroup: ValueOf<typeof Group>;
+  courier: ValueOf<typeof Courier>;
   expectedDateOfDelivery: string;
+  note: string;
+  orderId: string;
+  serviceProvider: ValueOf<typeof Courier>;
+  stage: ValueOf<typeof Stage>;
+  stageGroup: ValueOf<typeof Group>;
 }

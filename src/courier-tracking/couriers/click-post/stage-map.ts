@@ -1,7 +1,7 @@
 import { ValueOf } from '../../../../typings/common';
 import { Stage } from '../../constant/stage';
 
-const StageMap: { [key: number]: ValueOf<typeof Stage> } = {
+const StageMap: Record<number, ValueOf<typeof Stage>> = {
   1: Stage.OrderPlaced,
   2: Stage.PickupPending,
   3: Stage.PickupFailed,

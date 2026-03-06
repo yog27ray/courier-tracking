@@ -15,12 +15,12 @@ export class Delhivery extends CourierTracking {
     return {
       awb: AWB,
       courier: Courier.Delhivery,
+      expectedDateOfDelivery: undefined,
       note: Instructions,
       orderId: ReferenceNo,
       serviceProvider: Courier.Delhivery,
       stage: StageMap[stage],
       stageGroup: StageGroupMap[StageMap[stage]],
-      expectedDateOfDelivery: undefined,
     };
   }
 }

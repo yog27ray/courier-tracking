@@ -1,7 +1,7 @@
 import { ValueOf } from '../../../../typings/common';
 import { Courier } from '../../constant/courier';
 
-const CourierMap: { [key: number]: ValueOf<typeof Courier> } = {
+const CourierMap: Record<number, ValueOf<typeof Courier>> = {
   1: Courier.Fedex,
   2: Courier.Aramex,
   3: Courier.EcomExpress,
@@ -16,9 +16,9 @@ const CourierMap: { [key: number]: ValueOf<typeof Courier> } = {
   105: Courier.ShipRocket,
   118: Courier.Dunzo,
   129: Courier.BlueDart,
+  207: Courier.GrowSimplee,
   212: Courier.AmazonTransportService,
   250: Courier.Smartr,
-  207: Courier.GrowSimplee,
   391: Courier.PicoXpress,
   1001: Courier.IndiaPost,
 };
