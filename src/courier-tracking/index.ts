@@ -3,4 +3,4 @@ import { Stage } from './constant/stage';
 import { CourierTracking } from './courier-tracking';
 import { CourierTrackingExpress } from './courier-tracking-express';
 
-export { CourierTracking, CourierTrackingExpress, Stage, Courier };
+export { Courier, CourierTracking, CourierTrackingExpress, Stage };

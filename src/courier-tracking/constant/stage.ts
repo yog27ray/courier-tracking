@@ -1,62 +1,62 @@
 const Stage: {
   AWBGenerated: 'AWBGenerated';
-  OrderPlaced: 'OrderPlaced';
-  PickupPending: 'PickupPending';
-  PickupFailed: 'PickupFailed';
-  PickedUp: 'PickedUp';
-  OutForPickup: 'OutForPickup';
-  InTransit: 'InTransit';
-  OutForDelivery: 'OutForDelivery';
-  NotServiceable: 'NotServiceable';
+  Damaged: 'Damaged';
   Delivered: 'Delivered';
   DeliveryFailed: 'DeliveryFailed';
+  ExchangeDelivered: 'ExchangeDelivered';
+  ExchangeInTransit: 'ExchangeInTransit';
+  ExchangePickUp: 'ExchangePickUp';
+  InTransit: 'InTransit';
+  Lost: 'Lost';
+  NotServiceable: 'NotServiceable';
   OrderCancelled: 'OrderCancelled';
-  ShipmentDelayed: 'ShipmentDelayed';
+  OrderPlaced: 'OrderPlaced';
+  OutForDelivery: 'OutForDelivery';
 
-  RTORequested: 'RTORequested';
+  OutForPickup: 'OutForPickup';
+  PickedUp: 'PickedUp';
+  PickupFailed: 'PickupFailed';
+  PickupPending: 'PickupPending';
+  ReturnOrderPlaced: 'ReturnOrderPlaced';
   RTO: 'RTO';
+  RTODelivered: 'RTODelivered';
+
+  RTODeliveryFailed: 'RTODeliveryFailed';
   RTOInTransit: 'RTOInTransit';
   RTOOutForDelivery: 'RTOOutForDelivery';
-  RTODelivered: 'RTODelivered';
-  RTODeliveryFailed: 'RTODeliveryFailed';
+  RTORequested: 'RTORequested';
+
   RTOShipmentDelayed: 'RTOShipmentDelayed';
-
-  ReturnOrderPlaced: 'ReturnOrderPlaced';
-  ExchangePickUp: 'ExchangePickUp';
-  ExchangeInTransit: 'ExchangeInTransit';
-  ExchangeDelivered: 'ExchangeDelivered';
-
-  Lost: 'Lost';
-  Damaged: 'Damaged';
+  ShipmentDelayed: 'ShipmentDelayed';
   ShipmentHeld: 'ShipmentHeld';
 } = {
   AWBGenerated: 'AWBGenerated',
   Damaged: 'Damaged',
+  Delivered: 'Delivered',
+  DeliveryFailed: 'DeliveryFailed',
   ExchangeDelivered: 'ExchangeDelivered',
   ExchangeInTransit: 'ExchangeInTransit',
   ExchangePickUp: 'ExchangePickUp',
-  RTOShipmentDelayed: 'RTOShipmentDelayed',
-  ReturnOrderPlaced: 'ReturnOrderPlaced',
-  ShipmentDelayed: 'ShipmentDelayed',
-  ShipmentHeld: 'ShipmentHeld',
-  OrderPlaced: 'OrderPlaced',
-  PickupPending: 'PickupPending',
-  PickupFailed: 'PickupFailed',
-  PickedUp: 'PickedUp',
-  OutForPickup: 'OutForPickup',
   InTransit: 'InTransit',
-  OutForDelivery: 'OutForDelivery',
+  Lost: 'Lost',
   NotServiceable: 'NotServiceable',
-  Delivered: 'Delivered',
-  DeliveryFailed: 'DeliveryFailed',
   OrderCancelled: 'OrderCancelled',
-  RTORequested: 'RTORequested',
+  OrderPlaced: 'OrderPlaced',
+  OutForDelivery: 'OutForDelivery',
+  OutForPickup: 'OutForPickup',
+  PickedUp: 'PickedUp',
+  PickupFailed: 'PickupFailed',
+  PickupPending: 'PickupPending',
+  ReturnOrderPlaced: 'ReturnOrderPlaced',
   RTO: 'RTO',
-  RTOInTransit: 'RTOInTransit',
-  RTOOutForDelivery: 'RTOOutForDelivery',
   RTODelivered: 'RTODelivered',
   RTODeliveryFailed: 'RTODeliveryFailed',
-  Lost: 'Lost',
+  RTOInTransit: 'RTOInTransit',
+  RTOOutForDelivery: 'RTOOutForDelivery',
+  RTORequested: 'RTORequested',
+  RTOShipmentDelayed: 'RTOShipmentDelayed',
+  ShipmentDelayed: 'ShipmentDelayed',
+  ShipmentHeld: 'ShipmentHeld',
 };
 
 export { Stage };

@@ -1,22 +1,22 @@
 const Group: {
-  OrderPlaced: 'OrderPlaced';
-  Dispatched: 'Dispatched';
-  InTransit: 'InTransit';
-  OutForDelivery: 'OutForDelivery';
-  FailedDelivery: 'FailedDelivery';
-  Delivered: 'Delivered';
-  Lost: 'Lost';
   Damaged: 'Damaged';
+  Delivered: 'Delivered';
+  Dispatched: 'Dispatched';
+  FailedDelivery: 'FailedDelivery';
+  InTransit: 'InTransit';
+  Lost: 'Lost';
+  OrderPlaced: 'OrderPlaced';
+  OutForDelivery: 'OutForDelivery';
   Returned: 'Returned';
 } = {
-  OrderPlaced: 'OrderPlaced',
-  Dispatched: 'Dispatched',
-  InTransit: 'InTransit',
-  OutForDelivery: 'OutForDelivery',
-  FailedDelivery: 'FailedDelivery',
-  Delivered: 'Delivered',
-  Lost: 'Lost',
   Damaged: 'Damaged',
+  Delivered: 'Delivered',
+  Dispatched: 'Dispatched',
+  FailedDelivery: 'FailedDelivery',
+  InTransit: 'InTransit',
+  Lost: 'Lost',
+  OrderPlaced: 'OrderPlaced',
+  OutForDelivery: 'OutForDelivery',
   Returned: 'Returned',
 };
 

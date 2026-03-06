@@ -1,4 +1,5 @@
 import express, { Request, Response, Router } from 'express';
+
 import { CourierTrackingCallback } from '../../typings/callback';
 import { CourierTrackingConfig } from '../../typings/config';
 import { CourierTracking } from './courier-tracking';
