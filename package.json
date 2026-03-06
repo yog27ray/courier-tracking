@@ -35,7 +35,7 @@
     "body-parser": "2.2.2",
     "chai": "6.2.2",
     "chai-subset": "1.6.0",
-    "eslint": "9.39.3",
+    "eslint": "10.0.2",
     "eslint-import-resolver-typescript": "4.4.4",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-perfectionist": "5.6.0",
